@@ -24,9 +24,9 @@ while True: # main game loop
     if playermove == 'r':
         print('ROCK vs. ', end='')
     elif playermove == 'p':
-        print('Paper vs. ', end='')
+        print('PAPER vs. ', end='')
     elif playermove == 's':
-        print('Scissors vs. ', end='')
+        print('SCISSORS vs. ', end='')
 
     # Random Computer Choice
     random_number = random.randint(1, 3)
