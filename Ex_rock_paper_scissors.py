@@ -16,15 +16,17 @@ while True: # main game loop
             sys.exit() # quit program
         if playermove == 'r' or playermove == 'p' or playermove == 's':
             break # Break out of the player input loop.
+        if playermove != 'r' or playermove != 'p' or playermove != 's':
+            print('INVALID OPTION!!!')
         print('Type one r, p, s, or q.')
 
     # Players choice
     if playermove == 'r':
         print('ROCK vs. ', end='')
     elif playermove == 'p':
-        print('PAPER vs. ', end='')
+        print('Paper vs. ', end='')
     elif playermove == 's':
-        print('SCISSORS vs. ', end='')
+        print('Scissors vs. ', end='')
 
     # Random Computer Choice
     random_number = random.randint(1, 3)
